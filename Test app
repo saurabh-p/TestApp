@@ -1,0 +1,103 @@
+package com.example.sa;
+
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.text.Editable;
+import android.text.method.KeyListener;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ScrollView;
+
+public class MainActivity extends Activity implements KeyListener,OnClickListener{
+	ScrollView s,sx;
+	Button b1,b2;
+	int c=0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        b1=(Button)findViewById(R.id.button1);
+        b2=(Button)findViewById(R.id.button2);
+    	s=(ScrollView)findViewById(R.id.s1);
+		sx=(ScrollView)findViewById(R.id.s2);
+    
+
+
+   
+
+b1.setOnClickListener(new View.OnClickListener() {
+		
+		
+		public void onClick(View v) 
+		{
+			// TODO Auto-generated method stub
+			
+			    int y = s.getHeight();
+			    s.smoothScrollBy(0, y);
+			    c=c+y;
+			
+		}
+	});
+b2.setOnClickListener(new View.OnClickListener() {
+	
+	
+	public void onClick(View v) 
+	{
+		// TODO Auto-generated method stub
+			
+		    int y = sx.getHeight();
+		    sx.smoothScrollBy(c, y);
+		    
+		
+	}
+});
+	}
+
+
+	@Override
+	public void clearMetaKeyState(View arg0, Editable arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public int getInputType() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public boolean onKeyDown(View arg0, Editable arg1, int arg2, KeyEvent arg3) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean onKeyOther(View arg0, Editable arg1, KeyEvent arg2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean onKeyUp(View arg0, Editable arg1, int arg2, KeyEvent arg3) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+    
+}
