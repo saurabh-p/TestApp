@@ -60,7 +60,7 @@ public class Main extends ActionBarActivity
                 objFregment=new about_us();
                 break;
             case 2:
-                objFregment=new contect();
+                objFregment=new contact();
                 break;
 
         }
