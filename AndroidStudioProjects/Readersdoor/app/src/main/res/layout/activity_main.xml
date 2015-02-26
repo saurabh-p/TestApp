@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+
+
+    >
+
+    <ScrollView
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content">
+
+            <VideoView
+                android:id="@+id/rdvideo"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+
+
+                />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/rdvideo">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BD3109"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Headline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Infect with \nbibliophilia.\n"
+
+                        android:textColor="#ffffff" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/content"
+                        style="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginStart="70dp"
+                        android:text="Built on everything we learnt\nfrom the journeys of several\nbook lovers, ReadersDoor is a\nfresh start to help spread the\nlove of books.\nRead on to know more"
+android:layout_marginBottom="40dp"
+
+                        android:textColor="#ffffff"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c1"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E6580B"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+
+                        android:src="@drawable/dsc"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/title2"
+                        style="@style/Base.TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="-150dp"
+                        android:text="Discover yourself \nthrough books, \nfriends\nand the world."
+                        android:textColor="#fff"
+
+                        />
+
+
+                    <View
+                        android:id="@+id/discoverview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Filters"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+
+                        android:text="Suggestion"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:autoText="false"
+                        android:text="@string/con2"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:autoText="false"
+                        android:text="@string/con3"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c2"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#A953BF"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/title3"
+                        style="@style/Base.TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Get connected \nWith like mind souls
+"
+                        android:textColor="#fff"
+
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

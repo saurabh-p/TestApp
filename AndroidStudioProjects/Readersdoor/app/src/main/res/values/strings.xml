@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Readersdoor</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="first">Infect with bibliophilia.</string>
+    <string name="con1">Built on everything we learnt\nfrom the journeys of several\nbook lovers, ReadersDoor is a\nfresh start to help spread the\nlove of books.</string>
+    <string name="con2">Enhance your reading journey through personalised suggestions.</string>
+    <string name="con3">Filters - your personal librarian.</string>
+</resources>
